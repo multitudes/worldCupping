@@ -11,11 +11,20 @@ struct ContentView: View {
     @State var showModal: Bool = false
     var body: some View {
         GeometryReader { geometry in
-        SettingsButton(showModal: $showModal)
-            .position(x: geometry.size.width * 0.92, y: geometry.size.width * 0.03)
-            .font(Font.system(size: 10 + geometry.size.width * 0.03))
-            .ignoresSafeArea()
-            .padding(.top, 10)
+        
+            ZStack{
+                SettingsButton(showModal: $showModal)
+                .position(x: geometry.size.width * 0.92, y: geometry.size.width * 0.03)
+                .font(Font.system(size: 10 + geometry.size.width * 0.03))
+                .ignoresSafeArea()
+                .padding(.top, 10)
+                
+            TitleView(width: geometry.size.width, height: geometry.size.height)
+                
+            }
+            
+            
+            
         }
     }
 }

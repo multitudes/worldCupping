@@ -16,7 +16,7 @@ struct TitleView: View {
         Text("World Cupping")
             .font(.largeTitle)
             .fontWeight(.black)
-            .foregroundColor(.primary)
+            .foregroundColor(.blue)
             .bold()
             .padding(.horizontal)
             .position(x: width / 2 , y: height / 10)

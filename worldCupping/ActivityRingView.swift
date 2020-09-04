@@ -34,7 +34,11 @@ struct ActivityRingView: View {
                     )
                     .border(Color.clear, width: 0)
                     .rotationEffect(.degrees(-90))
-
+                Circle()
+                    .stroke(Color.red, lineWidth: lineWidth)
+                    .frame(width: lineWidth  , height: lineWidth)
+                    .opacity(0.3)
+                    .offset(y: -(frameSize! / 2 )   )
                 // the rounded start
 //                Circle()
 //                    .border(Color.clear, width: 0)

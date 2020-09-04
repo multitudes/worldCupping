@@ -17,6 +17,7 @@
 		45E8F478250228AE00F4C375 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F477250228AE00F4C375 /* PrivacyView.swift */; };
 		45E8F47A2502484C00F4C375 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F4792502484C00F4C375 /* TitleView.swift */; };
 		45E8F47C2502494500F4C375 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F47B2502494500F4C375 /* ActivityRingView.swift */; };
+		45E8F47E25025BF800F4C375 /* CircleCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F47D25025BF700F4C375 /* CircleCup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		45E8F477250228AE00F4C375 /* PrivacyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		45E8F4792502484C00F4C375 /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		45E8F47B2502494500F4C375 /* ActivityRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
+		45E8F47D25025BF700F4C375 /* CircleCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				45E8F4792502484C00F4C375 /* TitleView.swift */,
 				45E8F471250227BB00F4C375 /* SettingsButton.swift */,
 				45E8F47B2502494500F4C375 /* ActivityRingView.swift */,
+				45E8F47D25025BF700F4C375 /* CircleCup.swift */,
 				45E8F4732502281A00F4C375 /* SettingsView.swift */,
 				45E8F477250228AE00F4C375 /* PrivacyView.swift */,
 				45E8F475250228A800F4C375 /* MailView.swift */,
@@ -158,6 +161,7 @@
 			files = (
 				45E8F4652502271100F4C375 /* ContentView.swift in Sources */,
 				45E8F47C2502494500F4C375 /* ActivityRingView.swift in Sources */,
+				45E8F47E25025BF800F4C375 /* CircleCup.swift in Sources */,
 				45E8F4742502281A00F4C375 /* SettingsView.swift in Sources */,
 				45E8F472250227BC00F4C375 /* SettingsButton.swift in Sources */,
 				45E8F47A2502484C00F4C375 /* TitleView.swift in Sources */,

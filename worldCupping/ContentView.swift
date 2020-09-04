@@ -11,10 +11,8 @@ struct ContentView: View {
     @State var showModal: Bool = false
     @State var progress: CGFloat = 100.0
     @State var isOn: Bool = true
-    //var lineWidth: CGFloat { frameSize! / 2 }
-    var strokeColor: Color {
-        Color.clear
-    }
+    
+
     var body: some View {
         GeometryReader { geometry in
         
@@ -31,7 +29,7 @@ struct ContentView: View {
                     ZStack {
                         // the light red shadow
                         Circle()
-                            .stroke(strokeColor, lineWidth: geometry.size.width / 3.5)
+                            .stroke(Color.clear, lineWidth: geometry.size.width / 3.5)
                             .opacity(0.3)
                         // the white progress circle
                         Circle()
@@ -40,9 +38,9 @@ struct ContentView: View {
                                 Color.red.opacity(0.2),
                                 style: StrokeStyle(lineWidth: geometry.size.width / 2, lineCap: .butt)
                             )
-                            
                             .rotationEffect(.degrees(-90))
                         
+                        // one circle package
                         ZStack {
                             Circle()
                                 .stroke(Color.red, lineWidth: geometry.size.width / 32)
@@ -66,30 +64,17 @@ struct ContentView: View {
                                 
                         }.offset(y: -(geometry.size.width / 3 ))
                         
-                        Circle()
-                            .stroke(Color.red, lineWidth: geometry.size.width / 32)
-                            .frame(width: geometry.size.width / 4  , height: geometry.size.width / 2)
-                            .opacity(0.4)
-                            .offset(y: -(geometry.size.width / 3 ))
-                            .rotationEffect(Angle.degrees(72))
-                        Circle()
-                            .stroke(Color.red, lineWidth: geometry.size.width / 32)
-                            .frame(width: geometry.size.width / 4  , height: geometry.size.width / 2)
-                            .opacity(0.4)
-                            .offset(y: -(geometry.size.width / 3 ))
-                            .rotationEffect(Angle.degrees(144))
-                        Circle()
-                            .stroke(Color.red, lineWidth: geometry.size.width / 32)
-                            .frame(width: geometry.size.width / 4  , height: geometry.size.width / 2)
-                            .opacity(0.4)
-                            .offset(y: -(geometry.size.width / 3 ))
-                            .rotationEffect(Angle.degrees(216))
-                        Circle()
-                            .stroke(Color.red, lineWidth: geometry.size.width / 32)
-                            .frame(width: geometry.size.width / 4  , height: geometry.size.width / 2)
-                            .opacity(0.4)
-                            .offset(y: -(geometry.size.width / 3 ))
-                            .rotationEffect(Angle.degrees(288))
+//                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: "2", showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 72.0)
+//                        
+                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 2, showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 72.0)
+
+                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 3, showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 144)
+
+                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 4, showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 216)
+
+                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 5, showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 288)
+
+
                         // the rounded start
         //                Circle()
         //                    .border(Color.clear, width: 0)

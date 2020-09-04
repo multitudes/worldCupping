@@ -18,6 +18,7 @@
 		45E8F47A2502484C00F4C375 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F4792502484C00F4C375 /* TitleView.swift */; };
 		45E8F47C2502494500F4C375 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F47B2502494500F4C375 /* ActivityRingView.swift */; };
 		45E8F47E25025BF800F4C375 /* CircleCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F47D25025BF700F4C375 /* CircleCup.swift */; };
+		45E8F480250288BA00F4C375 /* OneCupOfCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F47F250288BA00F4C375 /* OneCupOfCoffee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		45E8F4792502484C00F4C375 /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		45E8F47B2502494500F4C375 /* ActivityRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
 		45E8F47D25025BF700F4C375 /* CircleCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCup.swift; sourceTree = "<group>"; };
+		45E8F47F250288BA00F4C375 /* OneCupOfCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCupOfCoffee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				45E8F4622502271100F4C375 /* worldCuppingApp.swift */,
+				45E8F47F250288BA00F4C375 /* OneCupOfCoffee.swift */,
 				45E8F4642502271100F4C375 /* ContentView.swift */,
 				45E8F4792502484C00F4C375 /* TitleView.swift */,
 				45E8F471250227BB00F4C375 /* SettingsButton.swift */,
@@ -167,6 +170,7 @@
 				45E8F47A2502484C00F4C375 /* TitleView.swift in Sources */,
 				45E8F4632502271100F4C375 /* worldCuppingApp.swift in Sources */,
 				45E8F476250228A800F4C375 /* MailView.swift in Sources */,
+				45E8F480250288BA00F4C375 /* OneCupOfCoffee.swift in Sources */,
 				45E8F478250228AE00F4C375 /* PrivacyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

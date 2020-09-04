@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @State var showModal: Bool = false
+    @State var progress: CGFloat = 1.0
+    @State var isOn: Bool = true
+    
     var body: some View {
         GeometryReader { geometry in
         
@@ -20,7 +23,10 @@ struct ContentView: View {
                 .padding(.top, 10)
                 
             TitleView(width: geometry.size.width, height: geometry.size.height)
-                
+            
+            ActivityRingView(timerIsOn: $isOn, progress: $progress, frameSize: geometry.size.width / 1.5 )
+                    .fixedSize()
+                    .position(x: geometry.size.width / 2 , y: geometry.size.height / 2)
             }
             
             

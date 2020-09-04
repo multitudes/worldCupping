@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showModal: Bool = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        GeometryReader { geometry in
+        SettingsButton(showModal: $showModal)
+            .position(x: geometry.size.width * 0.92, y: geometry.size.width * 0.03)
+            .font(Font.system(size: 10 + geometry.size.width * 0.03))
+            .ignoresSafeArea()
+            .padding(.top, 10)
+        }
     }
 }
 

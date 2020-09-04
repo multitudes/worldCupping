@@ -16,6 +16,9 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
         
+            PushButton(isOn: $isOn, progress: $progress, size: geometry.size.width)
+                .position(x: geometry.size.width / 2 , y: isOn ? geometry.size.height / 2 : geometry.size.height / 2 + geometry.size.height / 2.5)
+            
             if isOn {
                 let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
                 Text("")
@@ -39,7 +42,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
                 .padding(.top, 10)
                 
-              //  TitleView(width: geometry.size.width, height: geometry.size.height)
+               TitleView(width: geometry.size.width, height: geometry.size.height)
             
                 
                 ZStack {

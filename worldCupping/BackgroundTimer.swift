@@ -21,7 +21,7 @@ struct BackgroundTimer: View {
                 .opacity(0.3)
             // the white progress circle
             Circle()
-                .trim(from: 0.0, to: progress / 120)
+                .trim(from: 0.0, to: progress / 10 / 75)
                 .stroke(
                     Color.red.opacity(0.2),
                     style: StrokeStyle(lineWidth: geometrySizeWidth / 2, lineCap: .butt)

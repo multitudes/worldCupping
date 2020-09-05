@@ -22,17 +22,16 @@ struct PushButton: View {
                 progress = 0.0
             }
         }, label: {
-            Text(isOn ? "\(Int(progress/10))" : "Start")
+            Text(isOn ? "Cancel" : "Start")
                 .font(.largeTitle)
                 .foregroundColor(.white)
-                .frame(width: isOn ? size / 2 : size / 2 , height: isOn ? size / 2 : size / 6 )
+                .frame(width: size / 2 , height: size / 6 )
                 .background(RadialGradient(gradient: Gradient(colors: onColors), center: .center, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: 200
                                 ))
                 .clipShape(Capsule())
                 .foregroundColor(.white)
-               // .shadow(color: Color.red ,radius: isOn ? 50 : 5)
-                .animation(.easeOut(duration: 0.8))
+                .animation(.easeOut(duration: 0.1))
                 
-        }).accessibility(label: isOn ? Text("Cancel") : Text("Start 2 minutes meditation"))
+        }).accessibility(label: isOn ? Text("Cancel") : Text("Start Cupping"))
     }
 }

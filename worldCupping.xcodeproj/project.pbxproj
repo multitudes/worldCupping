@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45246CC32503F15D008AEAE9 /* MinutesSecondsTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */; };
 		45E8F4632502271100F4C375 /* worldCuppingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F4622502271100F4C375 /* worldCuppingApp.swift */; };
 		45E8F4652502271100F4C375 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F4642502271100F4C375 /* ContentView.swift */; };
 		45E8F4672502271400F4C375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E8F4662502271400F4C375 /* Assets.xcassets */; };
@@ -17,13 +18,13 @@
 		45E8F478250228AE00F4C375 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F477250228AE00F4C375 /* PrivacyView.swift */; };
 		45E8F47A2502484C00F4C375 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F4792502484C00F4C375 /* TitleView.swift */; };
 		45E8F47C2502494500F4C375 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F47B2502494500F4C375 /* ActivityRingView.swift */; };
-		45E8F47E25025BF800F4C375 /* CircleCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F47D25025BF700F4C375 /* CircleCup.swift */; };
 		45E8F480250288BA00F4C375 /* OneCupOfCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F47F250288BA00F4C375 /* OneCupOfCoffee.swift */; };
 		45E8F48225028E2F00F4C375 /* BackgroundTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F48125028E2F00F4C375 /* BackgroundTimer.swift */; };
 		45E8F4842502945100F4C375 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F4832502945100F4C375 /* PushButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesSecondsTimer.swift; sourceTree = "<group>"; };
 		45E8F45F2502271100F4C375 /* worldCupping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worldCupping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E8F4622502271100F4C375 /* worldCuppingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worldCuppingApp.swift; sourceTree = "<group>"; };
 		45E8F4642502271100F4C375 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		45E8F477250228AE00F4C375 /* PrivacyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		45E8F4792502484C00F4C375 /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		45E8F47B2502494500F4C375 /* ActivityRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
-		45E8F47D25025BF700F4C375 /* CircleCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCup.swift; sourceTree = "<group>"; };
 		45E8F47F250288BA00F4C375 /* OneCupOfCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCupOfCoffee.swift; sourceTree = "<group>"; };
 		45E8F48125028E2F00F4C375 /* BackgroundTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTimer.swift; sourceTree = "<group>"; };
 		45E8F4832502945100F4C375 /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
@@ -77,10 +77,10 @@
 				45E8F48125028E2F00F4C375 /* BackgroundTimer.swift */,
 				45E8F4832502945100F4C375 /* PushButton.swift */,
 				45E8F4642502271100F4C375 /* ContentView.swift */,
+				45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */,
 				45E8F4792502484C00F4C375 /* TitleView.swift */,
 				45E8F471250227BB00F4C375 /* SettingsButton.swift */,
 				45E8F47B2502494500F4C375 /* ActivityRingView.swift */,
-				45E8F47D25025BF700F4C375 /* CircleCup.swift */,
 				45E8F4732502281A00F4C375 /* SettingsView.swift */,
 				45E8F477250228AE00F4C375 /* PrivacyView.swift */,
 				45E8F475250228A800F4C375 /* MailView.swift */,
@@ -171,13 +171,13 @@
 				45E8F48225028E2F00F4C375 /* BackgroundTimer.swift in Sources */,
 				45E8F4652502271100F4C375 /* ContentView.swift in Sources */,
 				45E8F47C2502494500F4C375 /* ActivityRingView.swift in Sources */,
-				45E8F47E25025BF800F4C375 /* CircleCup.swift in Sources */,
 				45E8F4742502281A00F4C375 /* SettingsView.swift in Sources */,
 				45E8F472250227BC00F4C375 /* SettingsButton.swift in Sources */,
 				45E8F47A2502484C00F4C375 /* TitleView.swift in Sources */,
 				45E8F4632502271100F4C375 /* worldCuppingApp.swift in Sources */,
 				45E8F476250228A800F4C375 /* MailView.swift in Sources */,
 				45E8F480250288BA00F4C375 /* OneCupOfCoffee.swift in Sources */,
+				45246CC32503F15D008AEAE9 /* MinutesSecondsTimer.swift in Sources */,
 				45E8F478250228AE00F4C375 /* PrivacyView.swift in Sources */,
 				45E8F4842502945100F4C375 /* PushButton.swift in Sources */,
 			);

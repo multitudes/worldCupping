@@ -22,16 +22,22 @@ struct PushButton: View {
                 progress = 0.0
             }
         }, label: {
-            Text(isOn ? "Cancel" : "Start")
-                .font(.largeTitle)
+            Text(isOn ? "X" : "Start")
+                .font(isOn ? .title : .largeTitle)
                 .foregroundColor(.white)
-                .frame(width: size / 2 , height: size / 6 )
-                .background(RadialGradient(gradient: Gradient(colors: onColors), center: .center, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: 200
+                .frame(width: isOn ? size / 16 : size / 2 , height: isOn ? size / 16 : size / 6 )
+                .background(RadialGradient(gradient: Gradient(colors: onColors), center: .center, startRadius: 5, endRadius: 200
                                 ))
-                .clipShape(Capsule())
+                .clipShape(Circle())
                 .foregroundColor(.white)
-                .animation(.easeOut(duration: 0.1))
+             //   .animation(.easeOut(duration: 0.1))
                 
         }).accessibility(label: isOn ? Text("Cancel") : Text("Start Cupping"))
+    }
+}
+
+struct PushButton_Previews: PreviewProvider {
+    static var previews: some View {
+        PushButton(isOn: .constant(true), progress: .constant(.zero), size: 800)
     }
 }

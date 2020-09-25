@@ -14,7 +14,7 @@ struct TitleView: View {
         Int(progress / 60 ) / 10
     }
     var seconds: Int {
-        (Int(progress) - Int(progress / 60 / 10) * 60) / 10
+        (Int(progress / 10) - Int(progress / 60 / 10) * 60) 
     }
     
     var timerIsOn: Bool {
@@ -24,12 +24,13 @@ struct TitleView: View {
     
     var body: some View {
         if timerIsOn {
-            
             Text(String(format: "%02d:%02d", minutes, seconds))
                 .font(Font.largeTitle.monospacedDigit())
+                .foregroundColor(.blue)
+                .bold()
         } else {
         
-        Text("World Cupping")
+        Text("World Coffee Cupping")
             .font(.largeTitle)
             .fontWeight(.black)
             .foregroundColor(.blue)
@@ -37,8 +38,9 @@ struct TitleView: View {
             .padding(.horizontal)
             .minimumScaleFactor(0.5)
             .multilineTextAlignment(.center)
-            .animation(.easeIn)
+            
         }
+        
     }
 }
 

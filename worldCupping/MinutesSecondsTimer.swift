@@ -24,6 +24,7 @@ struct MinutesSecondsTimer: View {
         if timerIsOn {
             Text("\(minutes):\(seconds)")
                 .font(.system(size: 30, design: .monospaced))
+                
         }
     }
 }

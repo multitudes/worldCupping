@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TitleView: View {
-    
+    @Environment(\.sizeCategory) var sizeCategory
     var progress: CGFloat
     var minutes: Int {
         Int(progress / 60 ) / 10
@@ -32,7 +32,7 @@ struct TitleView: View {
                 
         } else {
                 Text("World Coffee Cupping")
-                    .font(.custom("Helvetica", size: 33, relativeTo: .headline))
+                    .font(sizeCategory == .accessibilityExtraExtraLarge ? .custom("Helvetica", size: 23, relativeTo: .headline) : .custom("Helvetica", size: 33, relativeTo: .headline))
                     .tracking(4)
                     .foregroundColor(.white)
                     .bold()

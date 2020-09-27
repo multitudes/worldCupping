@@ -12,6 +12,7 @@ import SwiftUI
 import AVFoundation
 
 struct ContentView: View {
+    @Environment(\.sizeCategory) var sizeCategory
     @State var showModal: Bool = false
     @State var progress: CGFloat = -5
     @State var isOn: Bool = false
@@ -55,6 +56,7 @@ struct ContentView: View {
                 
                     
                 TitleView(progress: progress)
+                   // .scaleEffect(sizeCategory == .accessibilityExtraExtraLarge ? CGSize(width: 0.6, height: 0.6) : CGSize(width: 1.0, height: 1.0))
                     .frame(minWidth: geometry.size.width, maxHeight:300, alignment: .center)
                     .position(x: geometry.size.width / 2 , y: geometry.size.height / 10)
                 

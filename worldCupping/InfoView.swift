@@ -18,21 +18,31 @@ struct InfoView: View {
     var text: String {
         switch progress {
             case 0:
-                return "When You Are Ready Press Start"
-            case 1..<15:
-                return "POUR COFFEE 1"
-            case 15..<30:
-                return "POUR COFFEE 2"
-            case 30..<45:
-                return "POUR COFFEE 3"
-            case 45..<60:
-                return "POUR COFFEE 4"
-            case 60..<75:
-                return "POUR COFFEE 5"
-            case 75..<200:
+                return "When you are ready press start"
+            case 1..<10:
+                return "POUR"
+            case 10..<15:
+                return ""
+            case 15..<25:
+                return "POUR"
+            case 25..<30:
+                return ""
+            case 30..<40:
+                return "POUR"
+            case 40..<45:
+                return ""
+            case 45..<55:
+                return "POUR"
+            case 55..<60:
+                return ""
+            case 60..<70:
+                return "POUR"
+            case 60..<70:
+                return ""
+            case 70..<200:
                 return "Wait..."
             case 200..<240:
-                return "Prepare to Break"
+                return "Prepare to break"
             case 240..<255:
                 return "Break 1"
             case 255..<270:
@@ -44,11 +54,11 @@ struct InfoView: View {
             case 300..<315:
                 return "Break 5"
             case 315..<480:
-                return "Wait for the coffee to cool down"
+                return "Wait for the coffee to cool"
             case 480..<900:
-                return "If The Temperature Allows It, You Can Start Cupping"
+                return "Now if the temperature allows, you can start cupping"
             default:
-                return "Cupping is Finished!"
+                return "Cupping has finished!"
         }
     }
     

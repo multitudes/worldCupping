@@ -75,6 +75,7 @@ struct ContentView: View {
                         
                         
                     }.frame(idealWidth: geometry.size.width/1.5, idealHeight: geometry.size.width / 1.5, alignment: .center)
+                   InfoView(progress: progress)
                     
                 }.fixedSize()
                 .position(x: geometry.size.width / 2 , y: geometry.size.height / 2)

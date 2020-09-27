@@ -11,7 +11,7 @@ import SwiftUI
 struct InfoView: View {
     
     var progress: CGFloat
-    var height: CGFloat
+    var offset: CGFloat
     var timerIsOn: Bool {
         progress > 0
     }
@@ -64,8 +64,6 @@ struct InfoView: View {
     
     
     var body: some View {
-        
-        
         Text(text)
             .font(.custom("Helvetica", size: 22, relativeTo: .headline))
             .foregroundColor(.white)
@@ -74,9 +72,8 @@ struct InfoView: View {
             .minimumScaleFactor(0.5)
             .lineLimit(4)
             .multilineTextAlignment(.center)
-            
             .opacity(0.8)
-            .offset(y: height)
+            .offset(y: offset)
     }
 }
 
@@ -84,9 +81,9 @@ struct InfoView: View {
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            InfoView(progress: 0.0, height: 200)
+            InfoView(progress: 0.0, offset: 200)
                 .preferredColorScheme(.dark)
-            InfoView(progress: 1.0, height: 200.0)
+            InfoView(progress: 1.0, offset: 200.0)
                 .preferredColorScheme(.dark)
             
         }

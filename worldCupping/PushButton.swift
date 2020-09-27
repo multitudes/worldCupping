@@ -13,14 +13,20 @@ struct PushButton: View {
     
     let title: String = "Start"
     var size: CGFloat
-    //var onColors = [Color.blue.opacity(0.8), Color.blue.opacity(0.1)]
+    @State var soundDelay: DispatchTime = DispatchTime(uptimeNanoseconds: UInt64(0))
     
     var body: some View {
         Button(action: {
+            //playSound(sound: "bip.aiff")
             isOn.toggle()
             if !isOn {
                 progress = 0.0
+                stopSound()
             }
+            if isOn {
+                    playSound(sound: "bip.aiff")
+            }
+            
         }, label: {
             Label {
                 Text(isOn ? "" : "Start")
@@ -34,7 +40,7 @@ struct PushButton: View {
                 isOn ? Image(systemName: "multiply.circle")
                     .foregroundColor(.white).opacity(0.8)
                     .font(Font.system(size: 8 + size * 0.03))
-                    : Image(systemName: "")
+                    : Image(systemName: "multiply.circle")
                     .foregroundColor(.clear).opacity(0.0)
                     .font(Font.system(size: 0))
                     
@@ -46,9 +52,9 @@ struct PushButton: View {
     }
 }
 
-struct PushButton_Previews: PreviewProvider {
-    static var previews: some View {
-        PushButton(isOn: .constant(true), progress: .constant(.zero), size: 800)
-        PushButton(isOn: .constant(false), progress: .constant(10), size: 800)
-    }
-}
+//struct PushButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PushButton(isOn: .constant(true), progress: .constant(.zero), size: 800)
+//        PushButton(isOn: .constant(false), progress: .constant(10), size: 800)
+//    }
+//}

@@ -13,6 +13,8 @@
 		45CC0F9C252079690039DFF1 /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F9B252079690039DFF1 /* BackgroundGradient.swift */; };
 		45CC0F9F252079A10039DFF1 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F9E252079A10039DFF1 /* Color+Ext.swift */; };
 		45CC0FA5252083FC0039DFF1 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0FA4252083FC0039DFF1 /* InfoView.swift */; };
+		45CC0FAB2520CB740039DFF1 /* bip.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 45CC0FA92520CB730039DFF1 /* bip.aiff */; };
+		45CC0FAC2520CB740039DFF1 /* bop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 45CC0FAA2520CB730039DFF1 /* bop.aiff */; };
 		45E8F4632502271100F4C375 /* worldCuppingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F4622502271100F4C375 /* worldCuppingApp.swift */; };
 		45E8F4652502271100F4C375 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8F4642502271100F4C375 /* ContentView.swift */; };
 		45E8F4672502271400F4C375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E8F4662502271400F4C375 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		45CC0F9B252079690039DFF1 /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
 		45CC0F9E252079A10039DFF1 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		45CC0FA4252083FC0039DFF1 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		45CC0FA92520CB730039DFF1 /* bip.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = bip.aiff; sourceTree = "<group>"; };
+		45CC0FAA2520CB730039DFF1 /* bop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = bop.aiff; sourceTree = "<group>"; };
 		45E8F45F2502271100F4C375 /* worldCupping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worldCupping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E8F4622502271100F4C375 /* worldCuppingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worldCuppingApp.swift; sourceTree = "<group>"; };
 		45E8F4642502271100F4C375 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +93,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		45CC0FAF2520CB790039DFF1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				45CC0FA92520CB730039DFF1 /* bip.aiff */,
+				45CC0FAA2520CB730039DFF1 /* bop.aiff */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		45E8F4562502271100F4C375 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 				45CC0F98252079360039DFF1 /* PreLaunch.swift */,
 				45E8F4642502271100F4C375 /* ContentView.swift */,
 				45CC0F9B252079690039DFF1 /* BackgroundGradient.swift */,
+				45CC0FAF2520CB790039DFF1 /* Sounds */,
 				45CC0FA1252079A60039DFF1 /* Extensions */,
 				45CC0F96252079120039DFF1 /* Model */,
 				45E8F47F250288BA00F4C375 /* OneCupOfCoffee.swift */,
@@ -196,7 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E8F46A2502271400F4C375 /* Preview Assets.xcassets in Resources */,
+				45CC0FAC2520CB740039DFF1 /* bop.aiff in Resources */,
 				45E8F4672502271400F4C375 /* Assets.xcassets in Resources */,
+				45CC0FAB2520CB740039DFF1 /* bip.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,7 @@ struct OneCupOfCoffee: View {
     
     var body: some View {
         ZStack {
+
             Circle()
                 .stroke(Color.red, lineWidth: lineWidth)
                 .frame(width: geometrySizeWidth / 8  , height: geometrySizeWidth / 2)

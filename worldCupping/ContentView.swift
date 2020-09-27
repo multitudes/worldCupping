@@ -6,20 +6,33 @@
 //
 
 import SwiftUI
+import AVKit
 
+var audioPlayer: AVAudioPlayer?
 
-// import this
-import AVFoundation
+func playSound(sound: String) {
+    audioPlayer?.volume = 0.0
+    //settings.volume
+    let path = Bundle.main.path(forResource: sound, ofType: nil)!
+    let url = URL(fileURLWithPath: path)
+    
+    do {
+        audioPlayer = try AVAudioPlayer(contentsOf: url)
+        audioPlayer?.play()
+    } catch {
+        print("couldn't load file :(")
+    }
+}
+func stopSound() {
+    audioPlayer?.stop()
+}
+
 
 struct ContentView: View {
     @Environment(\.sizeCategory) var sizeCategory
     @State var showModal: Bool = false
     @State var progress: CGFloat = -5
     @State var isOn: Bool = false
-    
-    // create a sound ID, in this case its the tweet sound.
-    let systemSoundID: SystemSoundID = 1200
-    
     
     var body: some View {
         GeometryReader { geometry in
@@ -30,9 +43,7 @@ struct ContentView: View {
                         if progress / 10 < 75 {
                             
                             progress += 0.1
-                            if progress > 1 || progress < 2 {
-                                //AudioServicesPlaySystemSound(systemSoundID)
-                            }
+                            
                         } else {
                             isOn = false
                             progress = 0
@@ -52,15 +63,14 @@ struct ContentView: View {
                     .font(Font.system(size: 10 + geometry.size.width * 0.04))
                     .ignoresSafeArea()
                     .padding(.top, 10)
-                   // .animation(Animation.easeInOut(duration: 0.5))
+                // .animation(Animation.easeInOut(duration: 0.5))
                 
-                    
+                
                 TitleView(progress: progress)
-                   // .scaleEffect(sizeCategory == .accessibilityExtraExtraLarge ? CGSize(width: 0.6, height: 0.6) : CGSize(width: 1.0, height: 1.0))
                     .frame(minWidth: geometry.size.width, maxHeight:300, alignment: .center)
-                    .position(x: geometry.size.width / 2 , y: geometry.size.height / 10)
+                    .position(x: geometry.size.width / 2 , y: isOn ? geometry.size.height / 15 : geometry.size.height / 10)
+                    .animation(Animation.easeInOut(duration: 0.5))
                 
-                 
                 
                 ZStack {
                     ZStack {
@@ -79,21 +89,23 @@ struct ContentView: View {
                         
                         
                     }.frame(idealWidth: geometry.size.width/1.5, idealHeight: geometry.size.width / 1.5, alignment: .center)
-                   
+                    
                     
                 }.fixedSize()
                 .position(x: geometry.size.width / 2 , y: geometry.size.height / 2)
                 
-                InfoView(progress: progress, height: (geometry.size.height / 2 - geometry.size.width / 2) * 1.6)
+                InfoView(progress: progress, offset: (geometry.size.width / 2) )
+                
                 
                 PushButton(isOn: $isOn, progress: $progress, size: geometry.size.width * 1.7)
                     .position(x: isOn ? geometry.size.width * 0.92 : geometry.size.width / 2 , y: isOn ? geometry.size.width * 0.03 : geometry.size.height / 2)
-                   // .ignoresSafeArea()
+                    // .ignoresSafeArea()
                     .padding(.top , isOn ? 10 : 0 )
-                   .animation(.linear(duration: 0.3))
+                    .animation(.linear(duration: 0.3))
             }
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

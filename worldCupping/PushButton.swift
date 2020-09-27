@@ -41,9 +41,6 @@ struct PushButton: View {
                     .foregroundColor(.white).opacity(0.8)
                     .font(Font.system(size: 8 + size * 0.03))
                 } else {
-//                    Image(systemName: "multiply.circle")
-//                    .font(Font.system(size: 0.0))
-//                    .hidden()
                     EmptyView()
                 }
             }

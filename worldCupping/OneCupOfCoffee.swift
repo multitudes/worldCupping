@@ -36,7 +36,7 @@ struct OneCupOfCoffee: View {
             Text("\(cupNumber)")
                 .foregroundColor(.white)
                 .font(.largeTitle)
-                .padding()
+                .padding(20)
                 .background(Circle())
                 .foregroundColor(.blue)
                 .frame(width: geometrySizeWidth / 4  , height: geometrySizeWidth / 4)

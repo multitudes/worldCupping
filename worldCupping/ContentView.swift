@@ -11,8 +11,7 @@ import AVKit
 var audioPlayer: AVAudioPlayer?
 
 func playSound(sound: String) {
-    audioPlayer?.volume = 0.0
-    //settings.volume
+    
     let path = Bundle.main.path(forResource: sound, ofType: nil)!
     let url = URL(fileURLWithPath: path)
     
@@ -23,6 +22,7 @@ func playSound(sound: String) {
         print("couldn't load file :(")
     }
 }
+
 func stopSound() {
     audioPlayer?.stop()
 }
@@ -48,21 +48,17 @@ struct ContentView: View {
                         } else {
                             isOn = false
                             progress = 0
-                            // present pop over
-                            //                            withAnimation(Animation.easeInOut(duration: 0.3)) {
-                            //                                showPopup = true
-                            //                            }
-                            
                         }
-                    }//.frame(minWidth: geometry.size.width, alignment: .center)
+                        
+                    }
             }
             ZStack{
                 BackgroundGradient()
                 
                 SettingsButton(showModal: $showModal)
-                    .position(x: geometry.size.width * 0.92, y: isOn ? -geometry.size.width * 0.15 : geometry.size.width * 0.03)
+                    .position(x: geometry.size.width * 0.92, y: isOn ? -geometry.size.width * 0.40 : geometry.size.width * 0.03)
                     .font(Font.system(size: 10 + geometry.size.width * 0.04))
-                    .ignoresSafeArea()
+                    //.ignoresSafeArea()
                     .padding(.top, 10)
                 // .animation(Animation.easeInOut(duration: 0.5))
                 
@@ -87,21 +83,19 @@ struct ContentView: View {
                         OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 4, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 216, delay: 45)
                         
                         OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 5, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 288, delay: 60)
-                        
-                        
                     }
-                   .frame(idealWidth: geometry.size.width/1.5, idealHeight: geometry.size.width / 1.5, alignment: .center)
+                    .frame(idealWidth: geometry.size.width/2, idealHeight: geometry.size.width / 2, alignment: .center)
                     
-                    
-                }.fixedSize()
-                .position(x: geometry.size.width / 2 , y: geometry.size.height / 2)
+                }
+                //.fixedSize()
+                //.position(x: geometry.size.width / 2 , y: geometry.size.height / 2)
                 
                 InfoView(progress: progress, offset: (geometry.size.width / 2) )
-                
+                    .animation(.linear(duration: 0.3))
                 
                 PushButton(isOn: $isOn, progress: $progress, size: geometry.size.width * 1.7)
-                    .position(x: isOn ? geometry.size.width * 0.92 : geometry.size.width / 2 , y: isOn ? geometry.size.width * 0.03 : geometry.size.height / 2)
-                    // .ignoresSafeArea()
+                    .position(x: isOn ? 5 + geometry.size.width * 0.92 : geometry.size.width / 2 , y: isOn ? geometry.size.width * 0.03 : geometry.size.height / 2)
+                    
                     .padding(.top , isOn ? 10 : 0 )
                     .animation(.linear(duration: 0.3))
             }

@@ -41,7 +41,8 @@ struct ContentView: View {
                 Text("")
                     .onReceive(timer) { _ in
                         if progress / 10 < 75 {
-                            
+                            print(DispatchTime.now())
+                            //print(UIDevice.current.model) -> iPad iPhone
                             progress += 0.1
                             
                         } else {
@@ -77,18 +78,19 @@ struct ContentView: View {
                         
                         BackgroundTimer(geometrySizeWidth: geometry.size.width, progress: $progress)
                         
-                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 1, showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 0, delay: 0)
+                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 1, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 0, delay: 0)
                         
-                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 2, showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 72.0, delay: 15)
+                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 2, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 72.0, delay: 15)
                         
-                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 3, showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 144, delay: 30)
+                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 3, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 144, delay: 30)
                         
-                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 4, showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 216, delay: 45)
+                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 4, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 216, delay: 45)
                         
-                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 5, showModal: $showModal, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 288, delay: 60)
+                        OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 5, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 288, delay: 60)
                         
                         
-                    }.frame(idealWidth: geometry.size.width/1.5, idealHeight: geometry.size.width / 1.5, alignment: .center)
+                    }
+                   .frame(idealWidth: geometry.size.width/1.5, idealHeight: geometry.size.width / 1.5, alignment: .center)
                     
                     
                 }.fixedSize()

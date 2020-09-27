@@ -11,7 +11,7 @@ struct OneCupOfCoffee: View {
     var geometrySizeWidth: CGFloat
     var cupNumber: Int
     var lineWidth: CGFloat { geometrySizeWidth * 1.07 / 9.93 / 2}
-    @Binding var showModal: Bool
+    //@Binding var showModal: Bool
     @Binding var progress: CGFloat
     @Binding var isOn: Bool
     
@@ -39,11 +39,20 @@ struct OneCupOfCoffee: View {
                 .padding()
                 .background(Circle())
                 .foregroundColor(.blue)
-                .frame(width: geometrySizeWidth / 3  , height: geometrySizeWidth / 4)
+                .frame(width: geometrySizeWidth / 4  , height: geometrySizeWidth / 4)
                 .rotationEffect(Angle.degrees( -rotationEffectInDegrees))
         }.offset(y: -(geometrySizeWidth / 3 ))
         .rotationEffect(Angle.degrees(rotationEffectInDegrees))
     }
 }
 
+struct OneCupOfCoffee_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            OneCupOfCoffee(geometrySizeWidth: 400, cupNumber: 1, progress: .constant(15), isOn: .constant(true), rotationEffectInDegrees: 0.0, delay: 0)
+                .preferredColorScheme(.dark)
 
+            
+        }
+    }
+}

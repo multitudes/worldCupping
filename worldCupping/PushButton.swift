@@ -17,7 +17,6 @@ struct PushButton: View {
     
     var body: some View {
         Button(action: {
-            //playSound(sound: "bip.aiff")
             isOn.toggle()
             if !isOn {
                 progress = 0.0
@@ -37,13 +36,16 @@ struct PushButton: View {
                     .clipShape(Circle())
 
             } icon: {
-                isOn ? Image(systemName: "multiply.circle")
+                if self.isOn {
+                    Image(systemName: "multiply.circle")
                     .foregroundColor(.white).opacity(0.8)
                     .font(Font.system(size: 8 + size * 0.03))
-                    : Image(systemName: "multiply.circle")
-                    .foregroundColor(.clear).opacity(0.0)
-                    .font(Font.system(size: 0))
-                    
+                } else {
+//                    Image(systemName: "multiply.circle")
+//                    .font(Font.system(size: 0.0))
+//                    .hidden()
+                    EmptyView()
+                }
             }
             
             

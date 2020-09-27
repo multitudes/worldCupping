@@ -23,7 +23,7 @@ struct PushButton: View {
                 stopSound()
             }
             if isOn {
-                    playSound(sound: "bip.aiff")
+                    //playSound(sound: "bip.aiff")
             }
             
         }, label: {

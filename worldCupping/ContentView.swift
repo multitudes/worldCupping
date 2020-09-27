@@ -8,6 +8,7 @@
 import SwiftUI
 import AVKit
 
+
 var audioPlayer: AVAudioPlayer?
 
 func playSound(sound: String) {
@@ -40,11 +41,18 @@ struct ContentView: View {
                 let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
                 Text("")
                     .onReceive(timer) { _ in
+                      //  var seconds = progress / 10
                         if progress / 10 < 75 {
-                            print(DispatchTime.now())
+                            //print(DispatchTime.now())
                             //print(UIDevice.current.model) -> iPad iPhone
                             progress += 0.1
-                            
+                            if progress / 10 == 0 {
+                               playSound(sound: "bip.aiff")
+                            }
+//                            if progress / 10 == 4 {
+//                                //stopSound()
+//                                playSound(sound: "bip.aiff")
+//                              }
                         } else {
                             isOn = false
                             progress = 0

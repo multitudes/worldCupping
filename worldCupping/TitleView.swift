@@ -29,15 +29,24 @@ struct TitleView: View {
                 .foregroundColor(.blue)
                 .bold()
         } else {
-        
-        Text("World Coffee Cupping")
-            .font(.largeTitle)
-            .fontWeight(.black)
-            .foregroundColor(.blue)
-            .bold()
-            .padding(.horizontal)
-            .minimumScaleFactor(0.5)
-            .multilineTextAlignment(.center)
+            
+            VStack{
+                //Spacer( 40)
+                Text("World Coffee Cupping")
+                    .font(.custom("Helvetica", size: 33))
+                    .tracking(4)
+                    //.font(.largeTitle)
+                    //.font(Font.custom("Copperplate", size: 20))
+                    .fontWeight(.black)
+                    .foregroundColor(.blue)
+                    .bold()
+                    .padding(.horizontal)
+                    .minimumScaleFactor(0.5)
+                    .multilineTextAlignment(.center)
+                    .textCase(.uppercase)
+                    .offset(y: 20)
+                
+            }
             
         }
         

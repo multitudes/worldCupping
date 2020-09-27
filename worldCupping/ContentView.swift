@@ -44,15 +44,16 @@ struct ContentView: View {
                     }//.frame(minWidth: geometry.size.width, alignment: .center)
             }
             ZStack{
-                    SettingsButton(showModal: $showModal)
-                        .position(x: geometry.size.width * 0.92, y: isOn ? -geometry.size.width * 0.15 : geometry.size.width * 0.03)
-                        .font(Font.system(size: 10 + geometry.size.width * 0.04))
-                        .ignoresSafeArea()
-                        .padding(.top, 10)
-                        .animation(Animation.easeInOut(duration: 0.5))
-
+                BackgroundGradient()
                 
+                SettingsButton(showModal: $showModal)
+                    .position(x: geometry.size.width * 0.92, y: isOn ? -geometry.size.width * 0.15 : geometry.size.width * 0.03)
+                    .font(Font.system(size: 10 + geometry.size.width * 0.04))
+                    .ignoresSafeArea()
+                    .padding(.top, 10)
+                    .animation(Animation.easeInOut(duration: 0.5))
                 
+                    
                 TitleView(progress: progress)
                     .position(x: geometry.size.width / 2 , y: geometry.size.height / 10)
                     .frame(minWidth: geometry.size.width, alignment: .center)

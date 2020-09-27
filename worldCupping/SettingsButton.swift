@@ -13,10 +13,9 @@ struct SettingsButton: View {
     
     var body: some View {
         Button(action: {
-            print("Button Pushed")
             self.showModal = true
         }) {
-            Image(systemName: "gear")
+            Image(systemName: "gear").foregroundColor(.white).opacity(0.8)
 
         }.sheet(isPresented: $showModal) {
             SettingsView()

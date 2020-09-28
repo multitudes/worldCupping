@@ -66,21 +66,64 @@ struct InfoView: View {
                 }
                 return "POUR THE FIFTH"
             case 70..<75:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
             case 75..<200:
                 return "Wait..."
             case 200..<240:
                 return "Prepare to break"
-            case 240..<255:
+            case 240..<250:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 1"
-            case 255..<270:
+            case 250..<255:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
+            case 255..<265:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 2"
-            case 270..<285:
+            case 265..<270:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
+            case 270..<280:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 3"
-            case 285..<300:
+            case 280..<285:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
+            case 285..<295:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 4"
-            case 300..<315:
+            case 295..<300:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
+            case 300..<305:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 5"
+            case 305..<315:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
             case 315..<480:
                 return "Wait for the coffee to cool"
             case 480..<900:

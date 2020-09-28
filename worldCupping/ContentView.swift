@@ -21,14 +21,8 @@ struct ContentView: View {
                 Text("")
                     .onReceive(timer) { _ in
                         if progress / 10 < 1000 {
-                            //print(DispatchTime.now())
-                            //print(UIDevice.current.model) -> iPad iPhone
                             progress += 0.1
-                        } else {
-                            isOn = false
-                            progress = 0
                         }
-                        
                     }
             }
             ZStack{

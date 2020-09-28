@@ -13,13 +13,12 @@ struct PushButton: View {
     
     let title: String = "Start"
     var size: CGFloat
-    @State var soundDelay: DispatchTime = DispatchTime(uptimeNanoseconds: UInt64(0))
     
     var body: some View {
         Button(action: {
             isOn.toggle()
             if !isOn {
-                progress = 0.0
+                progress = -1.0
             }
         }, label: {
             Label {

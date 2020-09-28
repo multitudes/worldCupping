@@ -25,13 +25,16 @@ class Player: ObservableObject {
                    do {
                        sound = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
                        print("Playing sound ")
-                       sound?.play()
+                    self.isPlaying = true
+                    sound?.play()
+                       
                    } catch {
                        print( "Could not find file")
                    }
                }
     }
     func stopSound() {
+        isPlaying = false
         sound?.stop()
     }
 }

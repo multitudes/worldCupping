@@ -9,32 +9,61 @@ import SwiftUI
 
 
 struct InfoView: View {
-    
+    @StateObject var player = Player()
     var progress: CGFloat
     var offset: CGFloat
 
     var text: String {
         switch progress / 10 {
-            case -3..<0:
+            case -5..<0:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return "When you are ready press start"
             case 0.1..<10:
-                
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "POUR THE FIRST"
             case 10..<15:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
             case 15..<25:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "POUR THE SECOND"
             case 25..<30:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
             case 30..<40:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "POUR THE THIRD"
             case 40..<45:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
             case 45..<55:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "POUR THE FOURTH"
             case 55..<60:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
             case 60..<70:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "POUR THE FIFTH"
             case 70..<75:
                 return ""

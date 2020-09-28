@@ -14,11 +14,11 @@ import SwiftUI
 extension Color {
 
     public static var gradientStartCoffee: Color {
-        return Color(hex: "053654")
+        return Color(hex: "053C5E")
     }
     
     public static var gradientEndCoffee: Color {
-        return Color(hex: "042C45")
+        return Color(hex: "03283F")
     }
 }
 

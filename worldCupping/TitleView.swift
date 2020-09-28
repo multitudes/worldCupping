@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TitleView: View {
-    
+    @Environment(\.sizeCategory) var sizeCategory
     var progress: CGFloat
     var minutes: Int {
         Int(progress / 60 ) / 10
@@ -26,28 +26,23 @@ struct TitleView: View {
         if timerIsOn {
             Text(String(format: "%02d:%02d", minutes, seconds))
                 .font(Font.largeTitle.monospacedDigit())
-                .foregroundColor(.blue)
+                .foregroundColor(.white)
                 .bold()
+                .opacity(0.8)
+                
         } else {
-            
-            VStack{
-                //Spacer( 40)
                 Text("World Coffee Cupping")
-                    .font(.custom("Helvetica", size: 33))
+                    .font(sizeCategory == .accessibilityExtraExtraLarge ? .custom("Helvetica", size: 23, relativeTo: .headline) : .custom("Helvetica", size: 33, relativeTo: .headline))
                     .tracking(4)
-                    //.font(.largeTitle)
-                    //.font(Font.custom("Copperplate", size: 20))
-                    .fontWeight(.black)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.white)
                     .bold()
                     .padding(.horizontal)
-                    .minimumScaleFactor(0.5)
+                    .minimumScaleFactor(0.1)
+                    .lineLimit(3)
                     .multilineTextAlignment(.center)
                     .textCase(.uppercase)
                     .offset(y: 20)
-                
-            }
-            
+                    .opacity(0.8)
         }
         
     }

@@ -108,6 +108,8 @@ struct ContentView: View {
                     .animation(.linear(duration: 0.3))
             }
         }
+        
+        
     }
     
 }

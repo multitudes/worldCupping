@@ -24,7 +24,7 @@ struct BackgroundTimer: View {
                 .trim(from: 0.0, to: progress / 10 / 480)
                 .stroke(
                     Color.red.opacity(0.5),
-                    style: StrokeStyle(lineWidth: geometrySizeWidth / 1.5, lineCap: .butt)
+                    style: StrokeStyle(lineWidth: geometrySizeWidth , lineCap: .butt)
                 )
                 .rotationEffect(.degrees(-90))
         }

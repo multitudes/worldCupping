@@ -18,7 +18,7 @@ struct PushButton: View {
         Button(action: {
             isOn.toggle()
             if !isOn {
-                progress = -1.0
+                progress = -5.0
             }
         }, label: {
             Label {

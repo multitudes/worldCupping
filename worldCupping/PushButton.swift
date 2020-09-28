@@ -10,8 +10,8 @@ import SwiftUI
 struct PushButton: View {
     @Binding var isOn: Bool
     @Binding var progress: CGFloat
+    @State var timer: Timer?
     
-    let title: String = "Start"
     var size: CGFloat
     
     var body: some View {
@@ -19,6 +19,16 @@ struct PushButton: View {
             isOn.toggle()
             if !isOn {
                 progress = -5.0
+                timer?.invalidate()
+            } else {
+            self.timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { _ in
+                guard progress <= 4800 else {
+                    timer?.invalidate()
+                    return
+                }
+                progress += 0.1
+                
+              })
             }
         }, label: {
             Label {

@@ -16,15 +16,15 @@ struct ContentView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            if isOn {
-                let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
-                Text("")
-                    .onReceive(timer) { _ in
-                        if progress / 10 < 1000 {
-                            progress += 0.1
-                        }
-                    }
-            }
+//            if isOn {
+//                let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
+//                Text("")
+//                    .onReceive(timer) { _ in
+//                        if progress / 10 < 1000 {
+//                            progress += 0.1
+//                        }
+//                    }
+//            }
             ZStack{
                 BackgroundGradient()
                 
@@ -57,7 +57,7 @@ struct ContentView: View {
                     .position(x: geometry.size.width / 2 , y: isOn ? geometry.size.height / 15 : geometry.size.height / 10)
                     .animation(Animation.easeInOut(duration: 0.5))
 
-                InfoView(progress: progress, offset: (geometry.size.width / 2) )
+                InfoView(progress: progress, offset: (geometry.size.height * 0.37) )
                     .animation(.linear(duration: 0.3))
                 
                 PushButton(isOn: $isOn, progress: $progress, size: geometry.size.width * 1.7)

@@ -16,27 +16,27 @@ struct InfoView: View {
         progress > 0
     }
     var text: String {
-        switch progress {
+        switch progress / 10 {
             case 0:
                 return "When you are ready press start"
             case 1..<10:
-                return "POUR"
+                return "POUR FIRST"
             case 10..<15:
                 return ""
             case 15..<25:
-                return "POUR"
+                return "POUR SECOND"
             case 25..<30:
                 return ""
             case 30..<40:
-                return "POUR"
+                return "POUR THIRD"
             case 40..<45:
                 return ""
             case 45..<55:
-                return "POUR"
+                return "POUR FOURTH"
             case 55..<60:
                 return ""
             case 60..<70:
-                return "POUR"
+                return "POUR FIFTH"
             case 60..<70:
                 return ""
             case 70..<200:

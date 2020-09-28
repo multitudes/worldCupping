@@ -46,13 +46,6 @@ struct ContentView: View {
                             //print(DispatchTime.now())
                             //print(UIDevice.current.model) -> iPad iPhone
                             progress += 0.1
-                            if progress / 10 == 0 {
-                               playSound(sound: "bip.aiff")
-                            }
-//                            if progress / 10 == 4 {
-//                                //stopSound()
-//                                playSound(sound: "bip.aiff")
-//                              }
                         } else {
                             isOn = false
                             progress = 0

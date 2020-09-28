@@ -11,7 +11,6 @@ struct OneCupOfCoffee: View {
     var geometrySizeWidth: CGFloat
     var cupNumber: Int
     var lineWidth: CGFloat { geometrySizeWidth * 1.07 / 9.93 / 2}
-    //@Binding var showModal: Bool
     @Binding var progress: CGFloat
     @Binding var isOn: Bool
     

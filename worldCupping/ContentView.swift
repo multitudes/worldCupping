@@ -20,7 +20,7 @@ struct ContentView: View {
                 let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
                 Text("")
                     .onReceive(timer) { _ in
-                        if progress / 10 < 75 {
+                        if progress / 10 < 1000 {
                             //print(DispatchTime.now())
                             //print(UIDevice.current.model) -> iPad iPhone
                             progress += 0.1
@@ -38,13 +38,6 @@ struct ContentView: View {
                     .position(x: geometry.size.width * 0.92, y: isOn ? -geometry.size.width * 0.40 : geometry.size.width * 0.03)
                     .font(Font.system(size: 10 + geometry.size.width * 0.04))
                     .padding(.top, 10)
-                
-                
-                TitleView(progress: progress)
-                    .frame(minWidth: geometry.size.width, maxHeight:300, alignment: .center)
-                    .position(x: geometry.size.width / 2 , y: isOn ? geometry.size.height / 15 : geometry.size.height / 10)
-                    .animation(Animation.easeInOut(duration: 0.5))
-                
                 
                 ZStack {
                     ZStack {
@@ -64,15 +57,17 @@ struct ContentView: View {
                     .frame(idealWidth: geometry.size.width/2, idealHeight: geometry.size.width / 2, alignment: .center)
                     
                 }
-                //.fixedSize()
-                //.position(x: geometry.size.width / 2 , y: geometry.size.height / 2)
                 
+                TitleView(progress: progress)
+                    .frame(minWidth: geometry.size.width, maxHeight:300, alignment: .center)
+                    .position(x: geometry.size.width / 2 , y: isOn ? geometry.size.height / 15 : geometry.size.height / 10)
+                    .animation(Animation.easeInOut(duration: 0.5))
+
                 InfoView(progress: progress, offset: (geometry.size.width / 2) )
                     .animation(.linear(duration: 0.3))
                 
                 PushButton(isOn: $isOn, progress: $progress, size: geometry.size.width * 1.7)
                     .position(x: isOn ? 5 + geometry.size.width * 0.92 : geometry.size.width / 2 , y: isOn ? geometry.size.width * 0.03 : geometry.size.height / 2)
-                    
                     .padding(.top , isOn ? 10 : 0 )
                     .animation(.linear(duration: 0.3))
             }

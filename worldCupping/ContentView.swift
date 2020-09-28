@@ -44,12 +44,10 @@ struct ContentView: View {
                             style: StrokeStyle(lineWidth: geometry.size.height * 0.5 , lineCap: .butt)
                         )
                         .rotationEffect(.degrees(-90))
+                        .scaleEffect(1.5)
                         
                     
                     ZStack {
-                        
-                   
-                        
                         OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 1, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 0, delay: 0)
                         
                         OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 2, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 72.0, delay: 15)

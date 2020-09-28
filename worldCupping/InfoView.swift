@@ -12,9 +12,7 @@ struct InfoView: View {
     
     var progress: CGFloat
     var offset: CGFloat
-    var timerIsOn: Bool {
-        progress > 0
-    }
+
     var text: String {
         switch progress / 10 {
             case 0:
@@ -57,8 +55,10 @@ struct InfoView: View {
                 return "Wait for the coffee to cool"
             case 480..<900:
                 return "Now if the temperature allows, you can start cupping"
-            default:
+            case 900..<1000:
                 return "Cupping has finished!"
+            default:
+                return "When you are ready press start"
         }
     }
     

@@ -20,12 +20,7 @@ struct PushButton: View {
             isOn.toggle()
             if !isOn {
                 progress = 0.0
-                stopSound()
             }
-            if isOn {
-                    //playSound(sound: "bip.aiff")
-            }
-            
         }, label: {
             Label {
                 Text(isOn ? "" : "Start")

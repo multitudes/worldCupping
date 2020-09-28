@@ -6,31 +6,10 @@
 //
 
 import SwiftUI
-import AVKit
-
-
-var audioPlayer: AVAudioPlayer?
-
-func playSound(sound: String) {
-    
-    let path = Bundle.main.path(forResource: sound, ofType: nil)!
-    let url = URL(fileURLWithPath: path)
-    
-    do {
-        audioPlayer = try AVAudioPlayer(contentsOf: url)
-        audioPlayer?.play()
-    } catch {
-        print("couldn't load file :(")
-    }
-}
-
-func stopSound() {
-    audioPlayer?.stop()
-}
-
 
 struct ContentView: View {
     @Environment(\.sizeCategory) var sizeCategory
+    @StateObject var player = Player()
     @State var showModal: Bool = false
     @State var progress: CGFloat = -5
     @State var isOn: Bool = false
@@ -41,7 +20,6 @@ struct ContentView: View {
                 let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
                 Text("")
                     .onReceive(timer) { _ in
-                      //  var seconds = progress / 10
                         if progress / 10 < 75 {
                             //print(DispatchTime.now())
                             //print(UIDevice.current.model) -> iPad iPhone
@@ -59,9 +37,7 @@ struct ContentView: View {
                 SettingsButton(showModal: $showModal)
                     .position(x: geometry.size.width * 0.92, y: isOn ? -geometry.size.width * 0.40 : geometry.size.width * 0.03)
                     .font(Font.system(size: 10 + geometry.size.width * 0.04))
-                    //.ignoresSafeArea()
                     .padding(.top, 10)
-                // .animation(Animation.easeInOut(duration: 0.5))
                 
                 
                 TitleView(progress: progress)

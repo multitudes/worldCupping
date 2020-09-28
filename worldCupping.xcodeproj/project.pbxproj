@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4514991E252212F80065EFE8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514991D252212F80065EFE8 /* Player.swift */; };
 		45246CC32503F15D008AEAE9 /* MinutesSecondsTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */; };
 		45CC0F94252078F70039DFF1 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F93252078F70039DFF1 /* UserSettings.swift */; };
 		45CC0F99252079360039DFF1 /* PreLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F98252079360039DFF1 /* PreLaunch.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4514991D252212F80065EFE8 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesSecondsTimer.swift; sourceTree = "<group>"; };
 		45CC0F93252078F70039DFF1 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		45CC0F98252079360039DFF1 /* PreLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLaunch.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				45E8F4622502271100F4C375 /* worldCuppingApp.swift */,
 				45CC0F98252079360039DFF1 /* PreLaunch.swift */,
 				45E8F4642502271100F4C375 /* ContentView.swift */,
+				4514991D252212F80065EFE8 /* Player.swift */,
 				45CC0F9B252079690039DFF1 /* BackgroundGradient.swift */,
 				45CC0FAF2520CB790039DFF1 /* Sounds */,
 				45CC0FA1252079A60039DFF1 /* Extensions */,
@@ -239,6 +242,7 @@
 				45246CC32503F15D008AEAE9 /* MinutesSecondsTimer.swift in Sources */,
 				45E8F478250228AE00F4C375 /* PrivacyView.swift in Sources */,
 				45E8F4842502945100F4C375 /* PushButton.swift in Sources */,
+				4514991E252212F80065EFE8 /* Player.swift in Sources */,
 				45CC0F9C252079690039DFF1 /* BackgroundGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

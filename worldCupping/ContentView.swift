@@ -28,15 +28,27 @@ struct ContentView: View {
             ZStack{
                 BackgroundGradient()
                 
+                
                 SettingsButton(showModal: $showModal)
                     .position(x: geometry.size.width * 0.92, y: isOn ? -geometry.size.width * 0.40 : geometry.size.width * 0.03)
                     .font(Font.system(size: 10 + geometry.size.width * 0.04))
                     .padding(.top, 10)
                 
                 ZStack {
+                    
+//                    BackgroundTimer(geometrySizeHeight: geometry.size.height , progress: $progress)
+                    Circle()
+                        .trim(from: 0.0, to: progress / 10 / 480)
+                        .stroke(
+                            Color.red.opacity(0.5),
+                            style: StrokeStyle(lineWidth: geometry.size.height * 0.5 , lineCap: .butt)
+                        )
+                        .rotationEffect(.degrees(-90))
+                        
+                    
                     ZStack {
                         
-                        BackgroundTimer(geometrySizeWidth: geometry.size.width, progress: $progress)
+                   
                         
                         OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 1, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 0, delay: 0)
                         
@@ -48,7 +60,7 @@ struct ContentView: View {
                         
                         OneCupOfCoffee(geometrySizeWidth: geometry.size.width, cupNumber: 5, progress: $progress, isOn: $isOn, rotationEffectInDegrees: 288, delay: 60)
                     }
-                    .frame(idealWidth: geometry.size.width/2, idealHeight: geometry.size.width / 2, alignment: .center)
+               //    .frame(idealWidth: geometry.size.width/2, idealHeight: geometry.size.width / 2, alignment: .center)
                     
                 }
                 

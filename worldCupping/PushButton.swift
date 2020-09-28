@@ -22,7 +22,7 @@ struct PushButton: View {
                 timer?.invalidate()
             } else {
             self.timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { _ in
-                guard progress <= 4800 else {
+                guard progress <= 10000 else {
                     timer?.invalidate()
                     return
                 }

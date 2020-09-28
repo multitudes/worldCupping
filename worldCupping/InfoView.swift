@@ -128,7 +128,7 @@ struct InfoView: View {
                 return "Wait for the coffee to cool"
             case 480..<900:
                 return "Now if the temperature allows, you can start cupping"
-            case 900..<1000:
+            case 900...1000:
                 return "Cupping has finished!"
             default:
                 return "When you are ready press start"

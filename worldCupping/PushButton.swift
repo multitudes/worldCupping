@@ -10,22 +10,26 @@ import SwiftUI
 struct PushButton: View {
     @Binding var isOn: Bool
     @Binding var progress: CGFloat
+    @State var timer: Timer?
     
-    let title: String = "Start"
     var size: CGFloat
-    @State var soundDelay: DispatchTime = DispatchTime(uptimeNanoseconds: UInt64(0))
     
     var body: some View {
         Button(action: {
             isOn.toggle()
             if !isOn {
-                progress = 0.0
-                stopSound()
+                progress = -5.0
+                timer?.invalidate()
+            } else {
+            self.timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { _ in
+                guard progress <= 10000 else {
+                    timer?.invalidate()
+                    return
+                }
+                progress += 0.1
+                
+              })
             }
-            if isOn {
-                    //playSound(sound: "bip.aiff")
-            }
-            
         }, label: {
             Label {
                 Text(isOn ? "" : "Start")

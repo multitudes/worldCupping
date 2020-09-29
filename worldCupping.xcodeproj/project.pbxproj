@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4514991E252212F80065EFE8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514991D252212F80065EFE8 /* Player.swift */; };
 		45149925252342C50065EFE8 /* AboutThisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149924252342C30065EFE8 /* AboutThisApp.swift */; };
-		4514995125235D040065EFE8 /* licence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514995025235D040065EFE8 /* licence.swift */; };
 		45246CC32503F15D008AEAE9 /* MinutesSecondsTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */; };
 		45CC0F94252078F70039DFF1 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F93252078F70039DFF1 /* UserSettings.swift */; };
 		45CC0F99252079360039DFF1 /* PreLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F98252079360039DFF1 /* PreLaunch.swift */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		4514991D252212F80065EFE8 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		45149924252342C30065EFE8 /* AboutThisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThisApp.swift; sourceTree = "<group>"; };
-		4514995025235D040065EFE8 /* licence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = licence.swift; sourceTree = "<group>"; };
 		45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesSecondsTimer.swift; sourceTree = "<group>"; };
 		45CC0F93252078F70039DFF1 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		45CC0F98252079360039DFF1 /* PreLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLaunch.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				45149924252342C30065EFE8 /* AboutThisApp.swift */,
 				45E8F477250228AE00F4C375 /* PrivacyView.swift */,
 				45E8F475250228A800F4C375 /* MailView.swift */,
-				4514995025235D040065EFE8 /* licence.swift */,
 			);
 			path = settingsViews;
 			sourceTree = "<group>";
@@ -88,6 +85,7 @@
 		45CC0F96252079120039DFF1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4514991D252212F80065EFE8 /* Player.swift */,
 				45CC0F93252078F70039DFF1 /* UserSettings.swift */,
 			);
 			path = Model;
@@ -108,6 +106,23 @@
 				45CC0FAA2520CB730039DFF1 /* bop.aiff */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		45CEB08E2523743500D3A4DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45CC0FA4252083FC0039DFF1 /* InfoView.swift */,
+				45E8F47F250288BA00F4C375 /* OneCupOfCoffee.swift */,
+				45E8F48125028E2F00F4C375 /* BackgroundTimer.swift */,
+				45E8F4832502945100F4C375 /* PushButton.swift */,
+				45E8F4792502484C00F4C375 /* TitleView.swift */,
+				45E8F471250227BB00F4C375 /* SettingsButton.swift */,
+				45CC0F9B252079690039DFF1 /* BackgroundGradient.swift */,
+				45E8F47B2502494500F4C375 /* ActivityRingView.swift */,
+				45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */,
+				45CC0F91252078830039DFF1 /* settingsViews */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		45E8F4562502271100F4C375 = {
@@ -132,20 +147,10 @@
 				45E8F4622502271100F4C375 /* worldCuppingApp.swift */,
 				45CC0F98252079360039DFF1 /* PreLaunch.swift */,
 				45E8F4642502271100F4C375 /* ContentView.swift */,
-				4514991D252212F80065EFE8 /* Player.swift */,
-				45CC0FA4252083FC0039DFF1 /* InfoView.swift */,
-				45CC0F9B252079690039DFF1 /* BackgroundGradient.swift */,
+				45CEB08E2523743500D3A4DB /* Views */,
 				45CC0FAF2520CB790039DFF1 /* Sounds */,
 				45CC0FA1252079A60039DFF1 /* Extensions */,
 				45CC0F96252079120039DFF1 /* Model */,
-				45E8F47F250288BA00F4C375 /* OneCupOfCoffee.swift */,
-				45E8F48125028E2F00F4C375 /* BackgroundTimer.swift */,
-				45E8F4832502945100F4C375 /* PushButton.swift */,
-				45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */,
-				45E8F4792502484C00F4C375 /* TitleView.swift */,
-				45E8F471250227BB00F4C375 /* SettingsButton.swift */,
-				45E8F47B2502494500F4C375 /* ActivityRingView.swift */,
-				45CC0F91252078830039DFF1 /* settingsViews */,
 				45E8F4662502271400F4C375 /* Assets.xcassets */,
 				45E8F46B2502271400F4C375 /* Info.plist */,
 				45E8F4682502271400F4C375 /* Preview Content */,
@@ -243,7 +248,6 @@
 				45CC0F99252079360039DFF1 /* PreLaunch.swift in Sources */,
 				45E8F47A2502484C00F4C375 /* TitleView.swift in Sources */,
 				45E8F4632502271100F4C375 /* worldCuppingApp.swift in Sources */,
-				4514995125235D040065EFE8 /* licence.swift in Sources */,
 				45E8F476250228A800F4C375 /* MailView.swift in Sources */,
 				45E8F480250288BA00F4C375 /* OneCupOfCoffee.swift in Sources */,
 				45246CC32503F15D008AEAE9 /* MinutesSecondsTimer.swift in Sources */,

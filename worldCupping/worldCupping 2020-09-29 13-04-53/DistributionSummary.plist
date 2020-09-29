@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>worldCupping.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>170992B8B0FC007013B339AB6E16044806B94075</string>
+				<key>dateExpires</key>
+				<string>01/09/2021</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>GGXD5E6AF8.com.laurentb.worldCupping</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>GGXD5E6AF8</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>GGXD5E6AF8.com.laurentb.worldCupping</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>worldCupping.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>e9035ce8-a104-46dc-8008-09c55bdf2f68</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.laurentb.worldCupping</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>GGXD5E6AF8</string>
+				<key>name</key>
+				<string>Laurent Brusa</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

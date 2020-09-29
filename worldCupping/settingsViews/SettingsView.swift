@@ -71,7 +71,7 @@ struct SettingsView: View {
                 Form {
                     Section(header: Text("General"), footer: isPhone ? Text("") : Text("©Laurent Brusa v1.0 2020")
                     ) {
-                        NavigationLink(destination: Text("Hello world")) {
+                        NavigationLink(destination: AboutThisApp()) {
                             HStack {
                                 Image(systemName: "info.circle").padding(5)
                                 Text("About This App")

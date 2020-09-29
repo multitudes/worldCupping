@@ -9,56 +9,129 @@ import SwiftUI
 
 
 struct InfoView: View {
-    
+    @StateObject var player = Player()
     var progress: CGFloat
     var offset: CGFloat
-    var timerIsOn: Bool {
-        progress > 0
-    }
+
     var text: String {
-        switch progress {
-            case 0:
+        switch progress / 10 {
+            case -5..<0:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return "When you are ready press start"
-            case 1..<10:
-                return "POUR"
+            case 0.1..<10:
+                if !player.isPlaying {
+                player.playSound()
+                }
+                return "POUR THE FIRST"
             case 10..<15:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
             case 15..<25:
-                return "POUR"
+                if !player.isPlaying {
+                player.playSound()
+                }
+                return "POUR THE SECOND"
             case 25..<30:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
             case 30..<40:
-                return "POUR"
+                if !player.isPlaying {
+                player.playSound()
+                }
+                return "POUR THE THIRD"
             case 40..<45:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
             case 45..<55:
-                return "POUR"
+                if !player.isPlaying {
+                player.playSound()
+                }
+                return "POUR THE FOURTH"
             case 55..<60:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
             case 60..<70:
-                return "POUR"
-            case 60..<70:
+                if !player.isPlaying {
+                player.playSound()
+                }
+                return "POUR THE FIFTH"
+            case 70..<75:
+                if player.isPlaying {
+                player.stopSound()
+                }
                 return ""
-            case 70..<200:
+            case 75..<200:
                 return "Wait..."
             case 200..<240:
                 return "Prepare to break"
-            case 240..<255:
+            case 240..<250:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 1"
-            case 255..<270:
+            case 250..<255:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
+            case 255..<265:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 2"
-            case 270..<285:
+            case 265..<270:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
+            case 270..<280:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 3"
-            case 285..<300:
+            case 280..<285:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
+            case 285..<295:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 4"
-            case 300..<315:
+            case 295..<300:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
+            case 300..<305:
+                if !player.isPlaying {
+                player.playSound()
+                }
                 return "Break 5"
+            case 305..<315:
+                if player.isPlaying {
+                player.stopSound()
+                }
+                return ""
             case 315..<480:
                 return "Wait for the coffee to cool"
             case 480..<900:
                 return "Now if the temperature allows, you can start cupping"
-            default:
+            case 900...1000:
                 return "Cupping has finished!"
+            default:
+                return "When you are ready press start"
         }
     }
     

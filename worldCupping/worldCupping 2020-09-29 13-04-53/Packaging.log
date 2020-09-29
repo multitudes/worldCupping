@@ -1,0 +1,139 @@
+2020-09-29 11:04:26 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fce02bb8e90; archive(resolved)='<IDEArchive: 0x7fcdbaaa4d60>', distributionTask(resolved)='2', distributionDestination(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team(resolved)='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	Chain (13, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fce02bb8e90; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fce97c0dbf0; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcdbaa79c00; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fce02b71370; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcec6eb42c0; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcec6eaa6d0; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcdbdd1e680; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fced3beccb0; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fced3be8770; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fced3bc7410; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fce94d69560; teamID='GGXD5E6AF8', teamName='Laurent Brusa', teamType='Individual', username='onespeedvelo@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fcdce5b9a90; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='(null)'>
+	<IDEDistributionContext: 0x7fcec49bfdd0; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fce465a6880>', team='(null)'>
+	<IDEDistributionContext: 0x7fcec479d7c0; archive = '<IDEArchive: 0x7fcdbaaa4d60>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fce02bb8e90>
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionCreateDestRootStep
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionCopyItemStep
+2020-09-29 11:04:26 +0000  Running /usr/bin/ditto '-V' '/Users/laurentb/Library/Developer/Xcode/Archives/2020-09-29/worldCupping 29-09-2020, 13.03.xcarchive/Products/Applications/worldCupping.app' '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root/Payload/worldCupping.app'
+2020-09-29 11:04:26 +0000  >>> Copying /Users/laurentb/Library/Developer/Xcode/Archives/2020-09-29/worldCupping 29-09-2020, 13.03.xcarchive/Products/Applications/worldCupping.app 
+2020-09-29 11:04:26 +0000  copying file ./_CodeSignature/CodeResources ... 
+2020-09-29 11:04:26 +0000  3179 bytes for ./_CodeSignature/CodeResources
+2020-09-29 11:04:26 +0000  copying file ./AppIcon60x60@2x.png ... 
+2020-09-29 11:04:26 +0000  11668 bytes for ./AppIcon60x60@2x.png
+2020-09-29 11:04:26 +0000  copying file ./bip.aiff ... 
+2020-09-29 11:04:26 +0000  11178 bytes for ./bip.aiff
+2020-09-29 11:04:26 +0000  copying file ./bop.aiff ... 
+2020-09-29 11:04:26 +0000  57998 bytes for ./bop.aiff
+2020-09-29 11:04:26 +0000  copying file ./worldCupping ... 
+2020-09-29 11:04:26 +0000  1160320 bytes for ./worldCupping
+2020-09-29 11:04:26 +0000  copying file ./Assets.car ... 
+2020-09-29 11:04:26 +0000  545800 bytes for ./Assets.car
+copying file ./AppIcon76x76@2x~ipad.png ... 
+2020-09-29 11:04:26 +0000  14959 bytes for ./AppIcon76x76@2x~ipad.png
+copying file ./embedded.mobileprovision ... 
+2020-09-29 11:04:26 +0000  9332 bytes for ./embedded.mobileprovision
+2020-09-29 11:04:26 +0000  copying file ./Info.plist ... 
+2020-09-29 11:04:26 +0000  1388 bytes for ./Info.plist
+copying file ./PkgInfo ... 
+2020-09-29 11:04:26 +0000  8 bytes for ./PkgInfo
+2020-09-29 11:04:26 +0000  /usr/bin/ditto exited with 0
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionEmbedProfileStep
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionInfoPlistStep
+2020-09-29 11:04:26 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionItemRemovalStep
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2020-09-29 11:04:26 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2020-09-29 11:04:26 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2020-09-29 11:04:26 +0000  Running /Volumes/orico/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root/Payload/worldCupping.app/worldCupping' '-l' '-o' '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root/Payload/worldCupping.app/worldCupping'
+2020-09-29 11:04:26 +0000  /Volumes/orico/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2020-09-29 11:04:26 +0000  Running /usr/bin/ditto '-V' '/Users/laurentb/Library/Developer/Xcode/Archives/2020-09-29/worldCupping 29-09-2020, 13.03.xcarchive/BCSymbolMaps/EBB2C5FF-CB4F-3AD8-B4E8-CCFA59A49A48.bcsymbolmap' '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root/BCSymbolMaps/EBB2C5FF-CB4F-3AD8-B4E8-CCFA59A49A48.bcsymbolmap'
+2020-09-29 11:04:26 +0000  >>> Copying /Users/laurentb/Library/Developer/Xcode/Archives/2020-09-29/worldCupping 29-09-2020, 13.03.xcarchive/BCSymbolMaps/EBB2C5FF-CB4F-3AD8-B4E8-CCFA59A49A48.bcsymbolmap 
+2020-09-29 11:04:26 +0000  copying file ./EBB2C5FF-CB4F-3AD8-B4E8-CCFA59A49A48.bcsymbolmap ... 
+2020-09-29 11:04:26 +0000  257948 bytes for ./EBB2C5FF-CB4F-3AD8-B4E8-CCFA59A49A48.bcsymbolmap
+2020-09-29 11:04:26 +0000  /usr/bin/ditto exited with 0
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionSymbolsStep
+2020-09-29 11:04:26 +0000  Excluding symbols for worldCupping.app
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionAppThinningStep
+2020-09-29 11:04:26 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionArchThinningStep
+2020-09-29 11:04:26 +0000  Running /Volumes/orico/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root/Payload/worldCupping.app/worldCupping' '-verify_arch' 'arm64e'
+2020-09-29 11:04:26 +0000  /Volumes/orico/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2020-09-29 11:04:26 +0000  Skipping architecture thinning for item "worldCupping" because arch "arm64e" wasn't found
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionODRStep
+2020-09-29 11:04:26 +0000  Processing step: IDEDistributionStripXattrsStep
+2020-09-29 11:04:26 +0000  Running /usr/bin/xattr '-crs' '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root/Payload/worldCupping.app'
+2020-09-29 11:04:27 +0000  /usr/bin/xattr exited with 0
+2020-09-29 11:04:27 +0000  Processing step: IDEDistributionCodesignStep
+2020-09-29 11:04:27 +0000  Entitlements for <IDEDistributionItem: 0x7fce1a65dac0; bundleID='com.laurentb.worldCupping', path='<DVTFilePath:0x7fcec42b4930:'/Users/laurentb/Library/Developer/Xcode/Archives/2020-09-29/worldCupping 29-09-2020, 13.03.xcarchive/Products/Applications/worldCupping.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fce1e1785e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcec4829260; name='Apple Development: Laurent Brusa (9TKNZP9RU6)', hash='89342207604E9FE5D16EC38531C59907889FD2E7', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fcdfb6dbe70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-08-19 10:26:29 +0000''>', entitlements='{
+    "application-identifier" = "GGXD5E6AF8.com.laurentb.worldCupping";
+    "com.apple.developer.team-identifier" = GGXD5E6AF8;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "GGXD5E6AF8.com.laurentb.worldCupping"
+    );
+}', teamID='GGXD5E6AF8', identifier='com.laurentb.worldCupping', executablePath='<DVTFilePath:0x7fced4350ea0:'/Users/laurentb/Library/Developer/Xcode/Archives/2020-09-29/worldCupping 29-09-2020, 13.03.xcarchive/Products/Applications/worldCupping.app/worldCupping'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "GGXD5E6AF8.com.laurentb.worldCupping";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = GGXD5E6AF8;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "GGXD5E6AF8.com.laurentb.worldCupping"
+    );
+}
+2020-09-29 11:04:27 +0000  Writing entitlements for <IDEDistributionItem: 0x7fce1a65dac0; bundleID='com.laurentb.worldCupping', path='<DVTFilePath:0x7fcec42b4930:'/Users/laurentb/Library/Developer/Xcode/Archives/2020-09-29/worldCupping 29-09-2020, 13.03.xcarchive/Products/Applications/worldCupping.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fce1e1785e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fcec487ae20; name='Apple Development: Laurent Brusa (9TKNZP9RU6)', hash='89342207604E9FE5D16EC38531C59907889FD2E7', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fce4647d230>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-08-19 10:26:29 +0000''>', entitlements='{
+    "application-identifier" = "GGXD5E6AF8.com.laurentb.worldCupping";
+    "com.apple.developer.team-identifier" = GGXD5E6AF8;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "GGXD5E6AF8.com.laurentb.worldCupping"
+    );
+}', teamID='GGXD5E6AF8', identifier='com.laurentb.worldCupping', executablePath='<DVTFilePath:0x7fced4350ea0:'/Users/laurentb/Library/Developer/Xcode/Archives/2020-09-29/worldCupping 29-09-2020, 13.03.xcarchive/Products/Applications/worldCupping.app/worldCupping'>', hardenedRuntime='0'>'> to: /var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/entitlements~~~PL43Lm
+2020-09-29 11:04:27 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '170992B8B0FC007013B339AB6E16044806B94075' '--entitlements' '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/entitlements~~~PL43Lm' '--preserve-metadata=identifier,flags,runtime' '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root/Payload/worldCupping.app'
+2020-09-29 11:04:27 +0000  /var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root/Payload/worldCupping.app: signed app bundle with Mach-O thin (arm64) [com.laurentb.worldCupping]
+2020-09-29 11:04:27 +0000  /usr/bin/codesign exited with 0
+2020-09-29 11:04:27 +0000  Processing step: IDEDistributionZipODRItemStep
+2020-09-29 11:04:27 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-09-29 11:04:27 +0000  Processing step: IDEDistributionCreateIPAStep
+2020-09-29 11:04:27 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root' '/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Packages/worldCupping.ipa'
+2020-09-29 11:04:27 +0000  >>> Copying /var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root 
+2020-09-29 11:04:27 +0000  copying file ./BCSymbolMaps/EBB2C5FF-CB4F-3AD8-B4E8-CCFA59A49A48.bcsymbolmap ... 
+2020-09-29 11:04:27 +0000  257948 bytes for ./BCSymbolMaps/EBB2C5FF-CB4F-3AD8-B4E8-CCFA59A49A48.bcsymbolmap
+2020-09-29 11:04:27 +0000  copying file ./Payload/worldCupping.app/_CodeSignature/CodeResources ... 
+2020-09-29 11:04:27 +0000  3179 bytes for ./Payload/worldCupping.app/_CodeSignature/CodeResources
+copying file ./Payload/worldCupping.app/AppIcon60x60@2x.png ... 
+2020-09-29 11:04:27 +0000  11668 bytes for ./Payload/worldCupping.app/AppIcon60x60@2x.png
+copying file ./Payload/worldCupping.app/bip.aiff ... 
+2020-09-29 11:04:27 +0000  11178 bytes for ./Payload/worldCupping.app/bip.aiff
+copying file ./Payload/worldCupping.app/bop.aiff ... 
+2020-09-29 11:04:27 +0000  57998 bytes for ./Payload/worldCupping.app/bop.aiff
+copying file ./Payload/worldCupping.app/worldCupping ... 
+2020-09-29 11:04:27 +0000  974096 bytes for ./Payload/worldCupping.app/worldCupping
+2020-09-29 11:04:27 +0000  copying file ./Payload/worldCupping.app/Assets.car ... 
+2020-09-29 11:04:27 +0000  545800 bytes for ./Payload/worldCupping.app/Assets.car
+2020-09-29 11:04:27 +0000  copying file ./Payload/worldCupping.app/AppIcon76x76@2x~ipad.png ... 
+2020-09-29 11:04:27 +0000  14959 bytes for ./Payload/worldCupping.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/worldCupping.app/embedded.mobileprovision ... 
+2020-09-29 11:04:27 +0000  9344 bytes for ./Payload/worldCupping.app/embedded.mobileprovision
+2020-09-29 11:04:27 +0000  copying file ./Payload/worldCupping.app/Info.plist ... 
+1388 bytes for ./Payload/worldCupping.app/Info.plist
+copying file ./Payload/worldCupping.app/PkgInfo ... 
+2020-09-29 11:04:27 +0000  8 bytes for ./Payload/worldCupping.app/PkgInfo
+2020-09-29 11:04:27 +0000  /usr/bin/ditto exited with 0
+2020-09-29 11:04:27 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2020-09-29 11:04:27 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2020-09-29 11:04:27 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2020-09-29 11:04:27 +0000  IDEDistributionItem init <DVTFilePath:0x7fcec4762a90:'/var/folders/r3/1nj81sp171s6byfnnmngryg40000gn/T/XcodeDistPipeline.~~~Je0o36/Root/Payload/worldCupping.app'>
+2020-09-29 11:04:27 +0000  Processing step: IDEDistributionCreateManifestStep
+2020-09-29 11:04:27 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4514991E252212F80065EFE8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514991D252212F80065EFE8 /* Player.swift */; };
+		45149925252342C50065EFE8 /* AboutThisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149924252342C30065EFE8 /* AboutThisApp.swift */; };
 		45246CC32503F15D008AEAE9 /* MinutesSecondsTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */; };
 		45CC0F94252078F70039DFF1 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F93252078F70039DFF1 /* UserSettings.swift */; };
 		45CC0F99252079360039DFF1 /* PreLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F98252079360039DFF1 /* PreLaunch.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4514991D252212F80065EFE8 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		45149924252342C30065EFE8 /* AboutThisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThisApp.swift; sourceTree = "<group>"; };
 		45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesSecondsTimer.swift; sourceTree = "<group>"; };
 		45CC0F93252078F70039DFF1 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		45CC0F98252079360039DFF1 /* PreLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLaunch.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				45E8F4732502281A00F4C375 /* SettingsView.swift */,
+				45149924252342C30065EFE8 /* AboutThisApp.swift */,
 				45E8F477250228AE00F4C375 /* PrivacyView.swift */,
 				45E8F475250228A800F4C375 /* MailView.swift */,
 			);
@@ -124,6 +129,8 @@
 				45E8F4622502271100F4C375 /* worldCuppingApp.swift */,
 				45CC0F98252079360039DFF1 /* PreLaunch.swift */,
 				45E8F4642502271100F4C375 /* ContentView.swift */,
+				4514991D252212F80065EFE8 /* Player.swift */,
+				45CC0FA4252083FC0039DFF1 /* InfoView.swift */,
 				45CC0F9B252079690039DFF1 /* BackgroundGradient.swift */,
 				45CC0FAF2520CB790039DFF1 /* Sounds */,
 				45CC0FA1252079A60039DFF1 /* Extensions */,
@@ -133,7 +140,6 @@
 				45E8F4832502945100F4C375 /* PushButton.swift */,
 				45246CC22503F15D008AEAE9 /* MinutesSecondsTimer.swift */,
 				45E8F4792502484C00F4C375 /* TitleView.swift */,
-				45CC0FA4252083FC0039DFF1 /* InfoView.swift */,
 				45E8F471250227BB00F4C375 /* SettingsButton.swift */,
 				45E8F47B2502494500F4C375 /* ActivityRingView.swift */,
 				45CC0F91252078830039DFF1 /* settingsViews */,
@@ -239,6 +245,8 @@
 				45246CC32503F15D008AEAE9 /* MinutesSecondsTimer.swift in Sources */,
 				45E8F478250228AE00F4C375 /* PrivacyView.swift in Sources */,
 				45E8F4842502945100F4C375 /* PushButton.swift in Sources */,
+				45149925252342C50065EFE8 /* AboutThisApp.swift in Sources */,
+				4514991E252212F80065EFE8 /* Player.swift in Sources */,
 				45CC0F9C252079690039DFF1 /* BackgroundGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +309,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = WorldCoffeeCuppingDevelopmentProfile;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -355,6 +364,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = WorldCoffeeCuppingDevelopmentProfile;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -367,7 +377,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Laurent Brusa (9TKNZP9RU6)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"worldCupping/Preview Content\"";
 				DEVELOPMENT_TEAM = GGXD5E6AF8;
 				ENABLE_PREVIEWS = YES;
@@ -377,8 +388,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.laurentb.worldCupping;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurentb.worldCoffeeCupping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WorldCoffeeCuppingDevelopmentProfile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,7 +401,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Laurent Brusa (9TKNZP9RU6)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"worldCupping/Preview Content\"";
 				DEVELOPMENT_TEAM = GGXD5E6AF8;
 				ENABLE_PREVIEWS = YES;
@@ -399,8 +412,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.laurentb.worldCupping;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurentb.worldCoffeeCupping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WorldCoffeeCuppingDevelopmentProfile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

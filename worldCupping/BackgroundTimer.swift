@@ -8,23 +8,23 @@
 import SwiftUI
 
 struct BackgroundTimer: View {
-    var geometrySizeWidth: CGFloat
+    var geometrySizeHeight: CGFloat
 
     @Binding var progress: CGFloat
 
 
     var body: some View {
         ZStack {
-            // the light red shadow
+            
+//            Circle()
+//                .stroke(Color.clear, lineWidth: geometrySizeHeight )
+//               // .opacity(0.8)
+//            // the progress circle
             Circle()
-                .stroke(Color.clear, lineWidth: geometrySizeWidth / 3.5)
-                .opacity(0.3)
-            // the white progress circle
-            Circle()
-                .trim(from: 0.0, to: progress / 10 / 75)
+                .trim(from: 0.0, to: progress / 10 / 480)
                 .stroke(
-                    Color.red.opacity(0.2),
-                    style: StrokeStyle(lineWidth: geometrySizeWidth / 2, lineCap: .butt)
+                    Color.red.opacity(0.5),
+                    style: StrokeStyle(lineWidth: geometrySizeHeight / 2 , lineCap: .butt)
                 )
                 .rotationEffect(.degrees(-90))
         }

@@ -1,5 +1,17 @@
 # World Coffee Cupping App
 
+This app is in beta and is currently being uploaded to TestFlighht
+
+## A beautiful coffee timer for the world coffee cupping held by James Hoffmann
+
+<br>
+<p align="center">
+  <img src="images/ww1.png" width="230"  title="WorldCoffeeCuppingApp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="screens/airlock1.png" width="230"  title="WorldCoffeeCuppingApp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screens/airlock.gif" width="230"  title="WorldCoffeeCuppingApp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<br></br>
+
 This app is a timer app for professional coffee tasters and amateurs.  
 
 James Hoffmann launched the first World Wide Coffee Cupping in 2019, and this app is a sort of homage to the idea.  

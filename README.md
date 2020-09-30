@@ -1,6 +1,7 @@
 # World Coffee Cupping App
 
-This app is in beta and is currently being uploaded to TestFlighht
+This app is in beta and is currently on TestFlight 
+https://testflight.apple.com/join/wSaG1GYU
 
 ## A beautiful coffee timer for the world coffee cupping held by James Hoffmann
 

@@ -6,6 +6,9 @@ This app is in beta and is currently being uploaded to TestFlighht
 
 This app is a timer app for professional coffee tasters and amateurs.  
 
+You can read more about the event here:
+https://www.worldslargestcoffeetasting.com
+
 <br>
 <p align="center">
   <img src="images/ww1.png" width="230"  title="WorldCoffeeCuppingApp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

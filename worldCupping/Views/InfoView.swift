@@ -24,7 +24,7 @@ struct InfoView: View {
                 if !player.isPlaying {
                 player.playSound()
                 }
-                return "POUR THE FIRST"
+                return "POUR THE FIRST COFFEE"
             case 10..<15:
                 if player.isPlaying {
                 player.stopSound()
@@ -34,7 +34,7 @@ struct InfoView: View {
                 if !player.isPlaying {
                 player.playSound()
                 }
-                return "POUR THE SECOND"
+                return "POUR THE SECOND COFFEE"
             case 25..<30:
                 if player.isPlaying {
                 player.stopSound()
@@ -44,7 +44,7 @@ struct InfoView: View {
                 if !player.isPlaying {
                 player.playSound()
                 }
-                return "POUR THE THIRD"
+                return "POUR THE THIRD COFFEE"
             case 40..<45:
                 if player.isPlaying {
                 player.stopSound()
@@ -54,7 +54,7 @@ struct InfoView: View {
                 if !player.isPlaying {
                 player.playSound()
                 }
-                return "POUR THE FOURTH"
+                return "POUR THE FOURTH COFFEE"
             case 55..<60:
                 if player.isPlaying {
                 player.stopSound()
@@ -64,7 +64,7 @@ struct InfoView: View {
                 if !player.isPlaying {
                 player.playSound()
                 }
-                return "POUR THE FIFTH"
+                return "POUR THE FIFTH COFFEE"
             case 70..<75:
                 if player.isPlaying {
                 player.stopSound()
